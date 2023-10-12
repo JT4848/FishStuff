@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Fish" ADD COLUMN     "illegal" BOOLEAN,
+ALTER COLUMN "minSize" DROP NOT NULL,
+ALTER COLUMN "maxSize" DROP NOT NULL,
+ALTER COLUMN "edibility" DROP NOT NULL;

@@ -13,12 +13,14 @@ datasource db {
 model Fish {
     id         Int        @id @default(autoincrement())
     name  String
-    minSize String
-    maxSize String
-    edibility String
-    measurement String
-    bagLimit  Int
+    minSize String?
+    maxSize String?
+    edibility String?
+    measurement String?
+    bagLimit  Int?
     photo String
-    saltwater Boolean
-    freshwater Boolean
+    saltwater Boolean?
+    freshwater Boolean?
+    synonyms String?
+    illegal Boolean?
 }
